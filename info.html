@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+        .custom {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 33% 66%;
+        }
+        
+        
+        .thumb img{
+            width: 100%;
+        }
+
+        .textarea {
+            background: wheat;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .textarea {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(56, 2, 2),rgb(56, 2, 2))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>限時優惠</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(rgb(212, 63, 63),rgb(199, 148, 91)); color:#fff;">公告</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">週年慶熱NOW送</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="flip">心花漾經典人氣餐</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slideup">拼盤樂享餐</a>
+                </li>
+            
+            </ul>
+        </div>
+    </div>    
+<!-- 週年慶熱NOW送 Page: Content  -->
+<div id="Content1" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>限時優惠</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+                <div id="hero" style="font-size:20px; font-weight:bold; color:white; width:100%; text-align:center;">週年慶熱NOW送</div>
+                <div class="custom">
+                    <div class="thumb">
+                        <img src="https://www.pizzahut.com.tw/archive/content/42e165a6c46366c847f0babbe9592094.jpg" style="width:100%;">
+                    </div>
+                    <div class="textarea">
+                        <h1>週年慶熱NOW送</h1>
+                        
+                        <h2>送薯星星+麻糬QQ球!</h2>
+                    </div>
+                </div>
+                
+
+            </div>
+    </div>
+    
+    <!-- 心花漾經典人氣餐 Page: Content  -->
+    <div id="Content2" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>限時優惠</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+                <div id="hero" style="font-size:20px; font-weight:bold; color:white; width:100%; text-align:center;">心花漾經典人氣餐</div>
+                <div class="custom">
+                    <div class="thumb">
+                        <img src="https://www.pizzahut.com.tw/archive/content/f947e5ebe855341a782d42356269b13c.jpg" alt="">
+                    </div>
+                    <div class="textarea">
+                        <h1>11月限定</h1>
+                        <h2>心花漾經典人氣餐</h2>
+                        <h2>單身狗專用，吃起來！</h2>
+                        <h2>-外帶大比薩2個或外送大比薩1個+小比薩1個
+-BBQ烤雞4翅4腿(二節翅/翅腿)
+-可樂1瓶(1.25L)</h2>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!-- 拼盤樂享餐 Page: Content  -->
+    <div id="Content3" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>限時優惠</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+                <div id="hero" style="font-size:20px; font-weight:bold; color:white; width:100%; text-align:center;">拼盤樂享餐</div>
+                <div class="custom">
+                    <div class="thumb">
+                        <img src="https://www.pizzahut.com.tw/archive/content/e2334e4abc5d249099db9fbd61be84eb.jpg" alt="">
+                    </div>
+                    <div class="textarea">
+                        <h1>生日Party大推!</h1>
+                        <h2>7~10人超適用!</h2>
+                        <h2>-大比薩3個
+                            -指定大拼盤1份
+                            -可樂1瓶(1.25L)</h2>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+</body>
+</html>

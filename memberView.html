@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(56, 2, 2),rgb(56, 2, 2))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>會員功能</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(rgb(212, 63, 63),rgb(199, 148, 91)); color:#fff;">設定</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">基本資訊</a>
+                </li>
+                
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slideup">訂單狀態</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+<!-- 基本資訊 Page: Content  -->
+<div id="Content1" data-role="page" style="background:-webkit-linear-gradient(rgb(56, 2, 2),rgb(56, 2, 2))">
+        <div data-role="header" data-position="fixed" data-theme="b" >
+            <h3>會員資訊</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">
+                    <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                            <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(rgb(212, 63, 63),rgb(199, 148, 91)); color:#fff;">基本資料</li>
+                    </ul>
+                </div>
+            <!-- <div><img src="cake/chocolate.jpg" style="width:100%;"></div> -->
+
+            <div class="ui-field-contain">
+                    <label for="name" style="color: white;">EMAIL:</label>
+                    <input type="text" name="name" id="name" placeholder="12345678@gm.nfu.edu.tw">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="name" style="color: white;">生日:</label>
+                    <input type="text" name="text" id="text" placeholder="860224">
+                </div>
+                <div class="ui-field-contain">
+                        <label for="name" style="color: white;">寄送地址:</label>
+                        <input type="text" name="text" id="text" placeholder="雲林縣虎尾鎮四維街一號">
+                </div>
+                <div class="ui-field-contain">
+                        <label for="name" style="color: white;">性別:</label>
+                        <input type="text" name="text" id="text" placeholder="人妖"">
+                </div>
+                <button type="submit" onclick="location.href='http://127.0.0.1:5500/memberView.html'">出去</button>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+    <!-- 訂單狀態 Page: Content  -->
+    <div id="Content3" data-role="page"  style="background:-webkit-linear-gradient(rgb(56, 2, 2),rgb(56, 2, 2))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>會員專屬</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+                <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                        <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(rgb(212, 63, 63),rgb(199, 148, 91)); color:#fff;">訂單狀態</li>
+                </ul>
+                <div class="ui-field-contain">
+                        <label for="name" style="color: white;">五筆訂單在購物車內</label>
+                </div>
+                <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                        <li is="listview-li">
+                                <a data-transition="pop"><div><img src="https://www.pizzahut.com.tw/archive/content/3252c77029dbe71815f94a2a3f818216.jpg" style="width:10%;">QQ黑糖珍奶</div></a>
+                        </li>
+                        <li is="listview-li">
+                                <a data-transition="flip"><div><img src="https://www.pizzahut.com.tw/archive/content/30dace581efdb6e8eda9d721859765e1.jpg" style="width:10%;">黃金榴槤</div></a>
+                        </li>
+                        <li is="listview-li">
+                                <a data-transition="flip"><div><img src="https://www.pizzahut.com.tw/archive/content/ae7dc06b55876bfa3f8c0ef917fab21f.jpg" style="width:10%;">青醬黃金貝</div></a>
+                        </li>
+                        <li is="listview-li">
+                                <a data-transition="flip"><div><img src="https://www.pizzahut.com.tw/archive/content/912b285040ea5d761552f2866c0a1223.jpg" style="width:10%;">法式燻鴨</div></a>
+                        </li>
+                        <li is="listview-li">
+                                <a data-transition="flip"><div><img src="https://www.pizzahut.com.tw/archive/content/f673ecf013fe18ec2baefc3923684750.jpg" style="width:10%;">法式蝦蟹鮑魚菇</div></a>
+                        </li>
+                    </ul>
+            <!-- <div><img src="cake/chocolate.jpg" style="width:100%;"></div> -->
+        </div>
+    </div>
+</body>
+</html>

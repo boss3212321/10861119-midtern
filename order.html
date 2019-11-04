@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(56, 2, 2),rgb(56, 2, 2))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>All Pizzas</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(rgb(212, 63, 63),rgb(199, 148, 91)); color:#fff;">Pizza List</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="Pizza_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content6" data-transition="slide"><div><img src="https://www.pizzahut.com.tw/archive/content/3252c77029dbe71815f94a2a3f818216.jpg" style="width:10%;">QQ黑糖珍奶</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content7" data-transition="flip"><div><img src="https://www.pizzahut.com.tw/archive/content/30dace581efdb6e8eda9d721859765e1.jpg" style="width:10%;">黃金榴槤</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content8" data-transition="slideup"><div><img src="https://www.pizzahut.com.tw/archive/content/ae7dc06b55876bfa3f8c0ef917fab21f.jpg" style="width:10%;">青醬黃金貝</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content9" data-transition="slidedown"><div><img src="https://www.pizzahut.com.tw/archive/content/912b285040ea5d761552f2866c0a1223.jpg" style="width:10%;">法式燻鴨</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content10" data-transition="pop"><div><img src="https://www.pizzahut.com.tw/archive/content/f673ecf013fe18ec2baefc3923684750.jpg" style="width:10%;">法式蝦蟹鮑魚菇</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide"><div><img src="https://www.pizzahut.com.tw/archive/content/33e130a335edbdd9e550c9f9edc13225.jpg" style="width:10%;">超級海鮮宴</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="flip"><div><img src="https://www.pizzahut.com.tw/archive/content/0b0ed9b42f1fd2bb5f47df8c53f95dc5.jpg" style="width:10%;">壽喜雪花牛</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slideup"><div><img src="https://www.pizzahut.com.tw/archive/content/de90d81c745e807a85aa68bbc5702aa6.jpg" style="width:10%;">直火松阪豬</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content4" data-transition="slidedown"><div><img src="https://www.pizzahut.com.tw/archive/content/81bb96fbbe4853a59a81d732f759afd2.jpg" style="width:10%;">和風章魚燒</div></a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content5" data-transition="pop"><div><img src="https://www.pizzahut.com.tw/archive/content/118ba90bd8ae59fc625c66e730becbf5.jpg" style="width:10%;">海鮮</div></a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+    
+    <!-- QQ黑糖珍奶 Page: Content  -->
+    <div id="Content1" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">QQ黑糖珍奶</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/3252c77029dbe71815f94a2a3f818216.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+    
+    <!-- 黃金榴槤 Page: Content  -->
+    <div id="Content2" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">黃金榴槤</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/30dace581efdb6e8eda9d721859765e1.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+    
+    <!-- 青醬黃金貝 Page: Content  -->
+    <div id="Content3" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">青醬黃金貝</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/ae7dc06b55876bfa3f8c0ef917fab21f.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+    
+    <!-- 法式燻鴨 Page: Content  -->
+    <div id="Content4" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">法式燻鴨</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/912b285040ea5d761552f2866c0a1223.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+    
+    <!-- 法式蝦蟹鮑魚菇 Page: Content  -->
+    <div id="Content5" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">法式蝦蟹鮑魚菇</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/f673ecf013fe18ec2baefc3923684750.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <!-- 超級海鮮宴 Page: Content  -->
+    <div id="Content6" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">超級海鮮宴</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/33e130a335edbdd9e550c9f9edc13225.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <!-- 壽喜雪花牛 Page: Content  -->
+    <div id="Content7" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">壽喜雪花牛</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/0b0ed9b42f1fd2bb5f47df8c53f95dc5.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <!-- 直火松阪豬 Page: Content  -->
+    <div id="Content8" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">直火松阪豬</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/de90d81c745e807a85aa68bbc5702aa6.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <!-- 和風章魚燒 Page: Content  -->
+    <div id="Content9" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">和風章魚燒</div>
+            <div><img src="https://www.pizzahut.com.tw/archive/content/81bb96fbbe4853a59a81d732f759afd2.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <!-- 海鮮 Page: Content  -->
+    <div id="Content10" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Pizza</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">海鮮</div>
+            <div><img src="https://www.pizzahut.com.tw/ml_images/tag-top.png" style="width:100%;"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

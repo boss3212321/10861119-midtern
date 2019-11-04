@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .custom {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 45% 55%;
+        }
+
+        
+
+        .thumb img {
+            width: 100%;
+        }
+
+        .textarea {
+            background: rgb(255, 255, 255);
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .textarea {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(63, 156, 156),rgb(56, 2, 2))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>推特</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all"
+                data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <div class="custom">
+                <div class="textarea">
+                   <a class="twitter-timeline" href="https://twitter.com/pizzahut?ref_src=twsrc%5Etfw">Tweets by pizzahut</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
